@@ -25,6 +25,7 @@ export class DeviceMotionPage {
   stopWatching(){
     this.subscription.unsubscribe();
   }
+  
   ionViewDidLoad() {
     console.log('ionViewDidLoad DeviceMotionPage');
   }
