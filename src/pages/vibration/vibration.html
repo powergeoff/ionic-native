@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Vibration/ Geolocation</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <button ion-button full (click)="vibrate()">Vibrate</button>
+
+  <button ion-button full (click)="vibratePattern()">Vibrate Pattern</button>
+
+  <button ion-button full (click)="getGeolocation()">Get Geolocation</button>
+
+  <div *ngIf="latitude">
+    <p>Lat: {{latitude}}</p>
+    <p>Long: {{longitude}}</p>
+  </div>
+
+</ion-content>
