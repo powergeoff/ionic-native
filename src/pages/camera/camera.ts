@@ -34,7 +34,7 @@ export class CameraPage {
       saveToPhotoAlbum: false
       //mediaType: this.camera.MediaType.PICTURE
     }
-
+    //https://stackoverflow.com/questions/49478537/displaying-a-file-uri-image-taken-by-native-camera-in-ionic-3
     this.camera.getPicture(options).then((imageData) => {
       // imageData is either a base64 encoded string or a file URI
       // If it's base64 (DATA_URL):
