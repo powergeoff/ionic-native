@@ -9,6 +9,7 @@ import { VibrationPage } from '../pages/vibration/vibration';
 import { CameraPage } from '../pages/camera/camera';
 import { BarcodePage } from '../pages/barcode/barcode';
 import { DeviceMotionPage } from '../pages/device-motion/device-motion';
+import { LocalNotificationPage } from '../pages/local-notification/local-notification';
 
 @Component({
   templateUrl: 'app.html'
@@ -30,7 +31,8 @@ export class MyApp {
       { title: 'Vibration/ Geolocation', component: VibrationPage },
       { title: 'Camera', component: CameraPage },
       { title: 'Barcode Scanner', component: BarcodePage },
-      { title: 'Device Motion', component: DeviceMotionPage }
+      { title: 'Device Motion', component: DeviceMotionPage },
+      { title: 'Local Notification', component: LocalNotificationPage }
     ];
 
   }

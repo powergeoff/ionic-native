@@ -12,13 +12,14 @@ import { VibrationPage } from '../pages/vibration/vibration';
 import { CameraPage } from '../pages/camera/camera';
 import { BarcodePage } from '../pages/barcode/barcode';
 import { DeviceMotionPage } from '../pages/device-motion/device-motion';
-
+import { LocalNotificationPage } from '../pages/local-notification/local-notification';
 
 import { Vibration } from '@ionic-native/vibration';
 import { Geolocation } from '@ionic-native/geolocation';
 import { Camera } from '@ionic-native/camera';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { DeviceMotion } from '@ionic-native/device-motion';
+import { LocalNotifications } from '@ionic-native/local-notifications';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { DeviceMotion } from '@ionic-native/device-motion';
     VibrationPage,
     CameraPage,
     BarcodePage,
-    DeviceMotionPage
+    DeviceMotionPage,
+    LocalNotificationPage
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,8 @@ import { DeviceMotion } from '@ionic-native/device-motion';
     VibrationPage,
     CameraPage,
     BarcodePage,
-    DeviceMotionPage
+    DeviceMotionPage,
+    LocalNotificationPage
   ],
   providers: [
     StatusBar,
@@ -52,7 +55,8 @@ import { DeviceMotion } from '@ionic-native/device-motion';
     Geolocation,
     Camera,
     BarcodeScanner,
-    DeviceMotion
+    DeviceMotion,
+    LocalNotifications
   ]
 })
 export class AppModule {}
